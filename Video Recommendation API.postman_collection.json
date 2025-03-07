@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "d6e98955-bbdf-4e27-9dd9-f4e3a8ac2133",
+		"name": "Video Recommendation API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42478177"
+	},
+	"item": [
+		{
+			"name": "Get Personalized Feed",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Flic-Token",
+						"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/feed?username=user1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"feed"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "user1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Video Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Flic-Token",
+						"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/posts/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"posts",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Viewed Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Flic-Token",
+						"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/viewed-posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"viewed-posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Liked Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Flic-Token",
+						"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/liked-posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"liked-posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Inspired Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Flic-Token",
+						"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/inspired-posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"inspired-posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Rated Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/rated-posts?Flic-Token=flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"rated-posts"
+					],
+					"query": [
+						{
+							"key": "Flic-Token",
+							"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Posts",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Flic-Token",
+						"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/all-posts",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"all-posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/all-users?Flic-Token=flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"all-users"
+					],
+					"query": [
+						{
+							"key": "Flic-Token",
+							"value": "flic_11d3da28e403d182c36a3530453e290add87d0b4a40ee50f17611f180d47956f"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
